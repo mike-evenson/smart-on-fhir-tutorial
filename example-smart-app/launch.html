@@ -24,7 +24,7 @@
     <!-- Prevent session bleed caused by single threaded embedded browser and sessionStorage API -->
     <!-- https://github.com/cerner/fhir-client-cerner-additions -->
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
-    <!-- Use to test on non-Cerner FHIR server
+
     <script>
       FHIR.oauth2.authorize({
           "client": {
@@ -34,13 +34,15 @@
           "server": "https://launch.smarthealthit.org/v/r3/sim/eyJoIjoiMSIsImoiOiIxIn0/fhir"
       });
     </script>
-    -->
+
+    <!--
     <script>
       FHIR.oauth2.authorize({
         'client_id': '6ec75a37-0862-4b79-8eac-81eaf5ca2834',
         'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
       });
     </script>
+    -->
     <div class="spinner">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
